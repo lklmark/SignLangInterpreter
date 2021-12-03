@@ -93,6 +93,9 @@ export default {
         case CustomGestures.GoodbyeGesture.name:
           name = "Goodbye";
           break;
+        case CustomGestures.EatGesture.name:
+          name = "Eat";
+          break;
         default:
           break;
       }

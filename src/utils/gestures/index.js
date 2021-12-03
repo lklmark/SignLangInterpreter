@@ -4,6 +4,7 @@ import PointingUpwardsGesture from "./PointingUpwards";
 import ThumbsDownGesture from "./ThumbsDown";
 import ThankYouGesture from "./ThankYou";
 import GoodbyeGesture from "./Goodbye";
+import EatGesture from "./Eat";
 
 import { Gestures, GestureEstimator } from "fingerpose";
 
@@ -17,6 +18,7 @@ const GE = new GestureEstimator([
   ThumbsDownGesture,
   ThankYouGesture,
   GoodbyeGesture,
+  EatGesture,
 ]);
 
 const CustomGestures = {
@@ -26,6 +28,7 @@ const CustomGestures = {
   ThumbsDownGesture,
   ThankYouGesture,
   GoodbyeGesture,
+  EatGesture,
 };
 
 export { CustomGestures, GE };
