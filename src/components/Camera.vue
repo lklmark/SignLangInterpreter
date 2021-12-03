@@ -22,7 +22,6 @@
       @camera-change="onCameraChange"
     />
     <canvas ref="canvas" :height="height" :width="width" />
-    
   </div>
 </template>
 
@@ -92,6 +91,9 @@ export default {
           break;
         case CustomGestures.GoodbyeGesture.name:
           name = "Goodbye";
+          break;
+        case CustomGestures.FoodGesture.name:
+          name = "Food";
           break;
         case CustomGestures.EatGesture.name:
           name = "Eat";
@@ -207,11 +209,11 @@ export default {
   transform: scale(-1, 1);
 
   position: fixed;
-    top: 20;
-    left: 100;
+  top: 20;
+  left: 100;
 
-  width: calc(640px );
-  height: calc(480px );
+  width: calc(640px);
+  height: calc(480px);
 
   &__most-recent {
     transform: scale(-1, 1);
